@@ -6,11 +6,11 @@ export default function Hero() {
   const heroData = content.hero
   
   return (
-    <section className="pt-32 pb-24 px-6 bg-background relative overflow-hidden">
-      <div className="container mx-auto max-w-6xl relative">
+    <section className="pt-24 pb-24 px-6 bg-background relative overflow-hidden min-h-screen flex items-center">
+      <div className="container mx-auto max-w-6xl relative w-full">
         {/* Main Content */}
         <div className="text-center max-w-5xl mx-auto mb-24">
-          <h1 className="text-6xl lg:text-7xl font-bold mb-8 text-foreground leading-tight tech-heading">
+          <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 text-foreground leading-tight tech-heading">
             {heroData.headline}
           </h1>
           

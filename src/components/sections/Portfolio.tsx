@@ -87,13 +87,13 @@ export default function Portfolio() {
 
   return (
     <section id="portfolio" className="py-24 bg-background-muted">
-      <div className="container mx-auto max-w-7xl">
+      <div className="container mx-auto max-w-7xl px-6">
         {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold mb-6 text-foreground tech-heading">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-foreground tech-heading">
             {portfolioData.title}
           </h2>
-          <p className="text-xl max-w-4xl mx-auto text-foreground-muted leading-relaxed">
+          <p className="text-lg lg:text-xl max-w-4xl mx-auto text-foreground-muted leading-relaxed">
             {portfolioData.description}
           </p>
         </div>

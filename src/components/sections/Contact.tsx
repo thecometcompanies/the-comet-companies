@@ -22,13 +22,13 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-24 bg-background">
-      <div className="container mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-5xl px-6">
         {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold mb-6 text-foreground tech-heading">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-foreground tech-heading">
             {contactData.title}
           </h2>
-          <p className="text-xl max-w-3xl mx-auto text-foreground-muted leading-relaxed">
+          <p className="text-lg lg:text-xl max-w-3xl mx-auto text-foreground-muted leading-relaxed">
             {contactData.description}
           </p>
         </div>
