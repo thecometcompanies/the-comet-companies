@@ -10,14 +10,11 @@ export { Badge, badgeVariants } from "./badge"
 export { Separator } from "./separator"
 
 // Professional Business Components
-export { StatsGrid } from "./stats-grid"
 export { TestimonialCard, TestimonialsGrid } from "./testimonial-card"
-export { PricingCard, PricingGrid } from "./pricing-card"
 export { FeatureGrid, ServiceFeature } from "./feature-grid"
-export { HeroSection, PortfolioHero } from "./hero-section"
+export { Section, SectionHeader, SectionTitle, SectionDescription } from "./section"
 
-// Types for components
-export type { ButtonProps } from "./button"
+// Note: Some components may not exist yet - only export what's available
 
 // Component categories for easy reference:
 /*
