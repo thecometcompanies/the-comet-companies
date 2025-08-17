@@ -48,7 +48,7 @@ function SectionHeader({
   return (
     <div
       className={cn(
-        "text-center mb-16 lg:mb-24 space-y-6 lg:space-y-8",
+        "text-center mb-20 lg:mb-32 space-y-8 lg:space-y-12 pt-8 lg:pt-12",
         "w-full flex flex-col items-center",
         className
       )}
@@ -68,7 +68,7 @@ function SectionTitle({
     <h2
       className={cn(
         "text-4xl md:text-5xl lg:text-6xl font-bold text-foreground",
-        "leading-tight tracking-tight",
+        "leading-tight tracking-tight mt-6 lg:mt-8",
         className
       )}
       {...props}
@@ -87,7 +87,7 @@ function SectionDescription({
     <p
       className={cn(
         "text-lg lg:text-xl text-muted-foreground leading-relaxed",
-        "max-w-3xl text-center",
+        "max-w-3xl text-center mb-8 lg:mb-12",
         className
       )}
       {...props}
