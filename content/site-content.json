@@ -32,8 +32,8 @@
         "isHighlighted": false
       },
       {
-        "name": "DataFlow",
-        "logo": "DataFlow",
+        "name": "Kases",
+        "logo": "Kases",
         "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center",
         "status": "ACQUIRED BY",
         "statusDetail": "TABLEAU",
@@ -41,7 +41,7 @@
         "isHighlighted": false
       },
       {
-        "name": "TechConsult",
+        "name": "Blue Star Capital",
         "logo": "TechConsult",
         "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop&crop=center",
         "status": "IPO",
@@ -50,10 +50,10 @@
         "isHighlighted": false
       },
       {
-        "name": "Airbnb",
-        "logo": "airbnb",
+        "name": "Autom8 LA",
+        "logo": "Autom8 LA",
         "image": "https://images.unsplash.com/photo-1559599238-308793637427?w=800&h=600&fit=crop&crop=center",
-        "status": "IPO",
+        "status": "Start Up",
         "statusDetail": "ABNB",
         "link": "https://airbnb.com",
         "isHighlighted": false
