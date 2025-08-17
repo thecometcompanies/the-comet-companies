@@ -44,7 +44,7 @@ export default function Contact() {
           </h2>
           <p className="body-lg max-w-2xl mx-auto text-gray-600">
             Interested in partnering with us or learning more about our portfolio companies? 
-            We'd love to hear from you.
+            We&apos;d love to hear from you.
           </p>
         </motion.div>
 
