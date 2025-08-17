@@ -30,10 +30,8 @@ function Section({
       {...props}
     >
       {container ? (
-        <div className="w-full px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
-            {children}
-          </div>
+        <div className="w-full px-8">
+          {children}
         </div>
       ) : (
         children
@@ -51,7 +49,7 @@ function SectionHeader({
     <div
       className={cn(
         "text-center mb-16 lg:mb-24 space-y-6 lg:space-y-8",
-        "max-w-4xl mx-auto",
+        "w-full flex flex-col items-center",
         className
       )}
       {...props}
@@ -89,7 +87,7 @@ function SectionDescription({
     <p
       className={cn(
         "text-lg lg:text-xl text-muted-foreground leading-relaxed",
-        "max-w-3xl mx-auto",
+        "max-w-3xl text-center",
         className
       )}
       {...props}

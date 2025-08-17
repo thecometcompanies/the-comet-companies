@@ -17,9 +17,8 @@ export default function HeroNew() {
       <div className="dotted-bg absolute inset-0 z-[-1] opacity-30"></div>
       
       {/* Perfect Centering Container */}
-      <div className="w-full px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-        <div className="max-w-7xl mx-auto">
-          <div className="max-w-6xl mx-auto text-center space-y-16 lg:space-y-20">
+      <div className="w-full px-8 py-20 relative z-10">
+        <div className="text-center space-y-16 lg:space-y-20">
             
             {/* Main Headline with Perfect Typography */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-foreground leading-tight mx-auto">
@@ -53,15 +52,13 @@ export default function HeroNew() {
             </div>
             
           </div>
-        </div>
       </div>
       
       {/* Stats Grid with Perfect Centering */}
       <div className="absolute bottom-0 left-0 right-0 border-t border-border bg-background/80 backdrop-blur-sm">
-        <div className="w-full px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex items-center justify-center">
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-20 max-w-6xl">
+        <div className="w-full px-8 py-16 lg:py-20">
+          <div className="flex items-center justify-center">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-20">
                 {heroData.stats.map((stat) => (
                   <div key={stat.label} className="text-center space-y-3 lg:space-y-4">
                     <div className="text-2xl md:text-3xl lg:text-5xl font-bold text-foreground">
