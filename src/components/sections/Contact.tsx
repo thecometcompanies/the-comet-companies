@@ -27,20 +27,20 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-24 px-6 bg-white">
-      <div className="container max-w-4xl mx-auto">
+    <section id="contact" className="enterprise-spacing bg-executive-white">
+      <div className="container mx-auto max-w-5xl">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h2 className="h2 mb-6 text-gray-900">
+          <h2 className="h2 boardroom-text luxury-text-shadow mb-6 text-luxury-dark">
             {contactData.title}
           </h2>
-          <p className="body-lg max-w-2xl mx-auto text-gray-600">
+          <p className="body-lg executive-text max-w-3xl mx-auto text-premium-gray">
             {contactData.description}
           </p>
         </motion.div>
@@ -51,7 +51,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
         >
           {contactData.options.map((option, index) => {
             const IconComponent = getIcon(option.title)
@@ -63,14 +63,14 @@ export default function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group p-6 bg-white border border-gray-100 rounded-lg hover:border-gray-200 hover:shadow-lg transition-all duration-300 text-center hover-lift"
+                className="group p-8 bg-white luxury-border rounded-xl hover:premium-shadow transition-all duration-500 text-center smooth-scale glass-effect"
               >
-                <div className="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-gray-100 transition-colors">
-                  <IconComponent className="w-6 h-6 text-gray-600" />
+                <div className="w-16 h-16 bg-boardroom-gray rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-luxury-dark group-hover:text-white transition-all duration-300">
+                  <IconComponent className="w-8 h-8 text-premium-gray group-hover:text-white" />
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">{option.title}</h3>
-                <p className="text-gray-600 mb-4 text-sm">{option.description}</p>
-                <div className="text-gray-900 font-medium text-sm">
+                <h3 className="boardroom-text text-luxury-dark mb-3 text-xl">{option.title}</h3>
+                <p className="executive-text text-premium-gray mb-6">{option.description}</p>
+                <div className="executive-text text-luxury-dark font-semibold">
                   {option.action}
                 </div>
               </motion.a>

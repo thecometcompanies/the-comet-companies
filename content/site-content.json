@@ -1,17 +1,17 @@
 {
   "hero": {
     "headline": "The Comet Companies",
-    "subheadline": "A Holding Company of Tech Driven Busineses",
+    "subheadline": "A Strategic Investment & Technology Holding Company Building the Future of Enterprise Solutions",
     "stats": [
-      { "value": "8+", "label": "Projects completed" },
-      { "value": "185k+", "label": "Happy clients" },
-      { "value": "15+", "label": "Years experience" },
-      { "value": "100%", "label": "Tech focused" }
+      { "value": "$2.4B+", "label": "Portfolio Value" },
+      { "value": "15", "label": "Portfolio Companies" },
+      { "value": "12", "label": "Successful Exits" },
+      { "value": "500K+", "label": "Users Served" }
     ]
   },
   "portfolio": {
     "title": "Portfolio Companies",
-    "description": "We invest in and build companies that are defining the future of technology and creating lasting impact across industries.",
+    "description": "Our investment strategy focuses on identifying and accelerating exceptional technology companies that solve complex enterprise challenges and drive meaningful market transformation.",
     "companies": [
       {
         "name": "DTLA Print",
@@ -151,18 +151,18 @@
     ]
   },
   "contact": {
-    "title": "Get in Touch",
-    "description": "Interested in partnering with us or learning more about our portfolio companies? We'd love to hear from you.",
+    "title": "Partnership Opportunities",
+    "description": "Explore strategic investment opportunities and partnership prospects with our executive team. We welcome discussions with exceptional entrepreneurs and institutional partners.",
     "options": [
       {
-        "title": "General Inquiries",
-        "description": "Get in touch via email",
-        "action": "hello@thecometcompanies.com",
-        "href": "mailto:hello@thecometcompanies.com"
+        "title": "Investment Inquiries",
+        "description": "Discuss strategic investment opportunities and portfolio access",
+        "action": "investments@thecometcompanies.com",
+        "href": "mailto:investments@thecometcompanies.com"
       },
       {
-        "title": "Partnership Opportunities",
-        "description": "Discuss investment and partnerships",
+        "title": "Executive Partnership",
+        "description": "Connect with our leadership team for strategic partnerships",
         "action": "partnerships@thecometcompanies.com",
         "href": "mailto:partnerships@thecometcompanies.com"
       }

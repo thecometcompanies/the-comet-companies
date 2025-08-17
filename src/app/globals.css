@@ -42,6 +42,53 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Container utility for proper centering */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1400px;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
 /* Typography Classes */
 .h1 {
   font-size: clamp(2.5rem, 6vw, 4rem);
@@ -183,4 +230,91 @@ body {
 .btn-secondary:hover {
   background: #F9F9F9;
   border-color: #D4D4D4;
+}
+
+/* Premium billion-dollar company enhancements */
+.premium-gradient {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #2d2d2d 100%);
+}
+
+.luxury-text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.premium-shadow {
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06),
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.enterprise-spacing {
+  padding: clamp(3rem, 8vw, 8rem) 0;
+}
+
+.luxury-border {
+  border: 1px solid;
+  border-image: linear-gradient(135deg, #e5e5e5, #f5f5f5, #e5e5e5) 1;
+}
+
+/* High-end animations */
+.smooth-scale {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.smooth-scale:hover {
+  transform: scale(1.02);
+}
+
+.enterprise-fade-in {
+  animation: enterpriseFadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes enterpriseFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Executive-level typography refinements */
+.executive-text {
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+.boardroom-text {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Premium color enhancements */
+.text-premium-gray {
+  color: #404040;
+}
+
+.text-luxury-dark {
+  color: #1a1a1a;
+}
+
+.bg-executive-white {
+  background-color: #fefefe;
+}
+
+.bg-boardroom-gray {
+  background-color: #f8f9fa;
 }

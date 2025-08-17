@@ -88,29 +88,31 @@ export default function Portfolio() {
   const portfolioData = content.portfolio
 
   return (
-    <section id="portfolio" className="py-24 px-6 bg-white">
-      <div className="container max-w-7xl mx-auto">
+    <section id="portfolio" className="enterprise-spacing bg-boardroom-gray">
+      <div className="container mx-auto">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-20"
         >
-          <h2 className="text-4xl font-bold mb-4 text-gray-900">
+          <h2 className="h2 boardroom-text luxury-text-shadow mb-6 text-luxury-dark">
             {portfolioData.title}
           </h2>
-          <p className="text-lg max-w-3xl mx-auto text-gray-600">
+          <p className="body-lg executive-text max-w-4xl mx-auto text-premium-gray">
             {portfolioData.description}
           </p>
         </motion.div>
 
-        {/* Company Grid - a16z Style */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 -m-[0.5px]">
-          {portfolioData.companies.map((company, index) => (
-            <CompanyCard key={company.name} company={company} index={index} />
-          ))}
+        {/* Company Grid - Premium a16z Style */}
+        <div className="premium-shadow rounded-lg overflow-hidden bg-white">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 -m-[0.5px]">
+            {portfolioData.companies.map((company, index) => (
+              <CompanyCard key={company.name} company={company} index={index} />
+            ))}
+          </div>
         </div>
 
         {/* Additional Info Section */}
@@ -119,9 +121,9 @@ export default function Portfolio() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-16 text-center"
+          className="mt-20 text-center"
         >
-          <p className="text-gray-500 text-sm mb-8">
+          <p className="executive-text text-premium-gray text-sm uppercase tracking-wider">
             * IPO denotes Initial Public Offering | DPO denotes Direct Public Offering
           </p>
         </motion.div>
