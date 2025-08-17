@@ -41,11 +41,11 @@ export default function ContactNew() {
       <div className="container mx-auto px-4">
         
         {/* Section Header - Perfectly Centered */}
-        <div className="text-center mb-20 max-w-5xl mx-auto space-y-6">
-          <h2 className="text-4xl md:text-6xl font-bold text-foreground mx-auto">
+        <div className="flex flex-col items-center justify-center text-center mb-20 space-y-6">
+          <h2 className="text-4xl md:text-6xl font-bold text-foreground max-w-4xl">
             Get In <span className="text-primary">Touch</span>
           </h2>
-          <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
             {contactData.description}
           </p>
         </div>
