@@ -111,7 +111,7 @@ export default function ContactNew() {
                       </label>
                       <Input 
                         placeholder="John"
-                        className="bg-background border-border focus:border-primary focus:ring-primary"
+                        className="bg-background border-border focus:border-primary focus:ring-primary h-12"
                       />
                     </div>
                     <div className="space-y-2">
@@ -120,7 +120,7 @@ export default function ContactNew() {
                       </label>
                       <Input 
                         placeholder="Doe"
-                        className="bg-background border-border focus:border-primary focus:ring-primary"
+                        className="bg-background border-border focus:border-primary focus:ring-primary h-12"
                       />
                     </div>
                   </div>
@@ -133,7 +133,7 @@ export default function ContactNew() {
                     <Input 
                       type="email"
                       placeholder="john@company.com"
-                      className="bg-background border-border focus:border-primary focus:ring-primary"
+                      className="bg-background border-border focus:border-primary focus:ring-primary h-12"
                     />
                   </div>
                   
@@ -144,7 +144,7 @@ export default function ContactNew() {
                     </label>
                     <Input 
                       placeholder="Your Company"
-                      className="bg-background border-border focus:border-primary focus:ring-primary"
+                      className="bg-background border-border focus:border-primary focus:ring-primary h-12"
                     />
                   </div>
                   
@@ -155,7 +155,7 @@ export default function ContactNew() {
                     </label>
                     <Textarea 
                       placeholder="Tell us about your project or inquiry..."
-                      className="bg-background border-border focus:border-primary focus:ring-primary min-h-[120px] resize-none"
+                      className="bg-background border-border focus:border-primary focus:ring-primary min-h-[120px] resize-none p-4"
                     />
                   </div>
                   
