@@ -223,40 +223,46 @@ body {
   outline-offset: 2px;
 }
 
-/* Vapi.ai Minimal Button Styles */
+/* Vapi.ai Style Buttons */
 .btn-primary {
   background: #3B82F6;
   color: #FFFFFF;
-  border: 1px solid #3B82F6;
-  padding: 0.75rem 1.5rem;
+  border: none;
+  padding: 0.875rem 1.75rem;
   border-radius: 0.5rem;
   font-weight: 500;
-  font-size: 0.875rem;
-  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-primary:hover {
   background: #2563EB;
-  border-color: #2563EB;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px 0 rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 12px 0 rgba(59, 130, 246, 0.25);
 }
 
 .btn-secondary {
   background: transparent;
   color: #FAFAFA;
   border: 1px solid #27272A;
-  padding: 0.75rem 1.5rem;
+  padding: 0.875rem 1.75rem;
   border-radius: 0.5rem;
   font-weight: 500;
-  font-size: 0.875rem;
-  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-secondary:hover {
   background: #18181B;
   border-color: #3B82F6;
   color: #3B82F6;
+  transform: translateY(-1px);
 }
 
 /* Vapi.ai Tech Company Enhancements */

@@ -28,7 +28,7 @@ function CompanyCard({ company, index }: { company: CompanyProps; index: number 
         relative aspect-[4/3] border border-border flex flex-col
         ${company.isHighlighted ? 'bg-gradient-to-br from-primary/20 to-accent/20' : 'bg-background-card'}
         hover:z-10 cursor-pointer overflow-hidden transition-all duration-200
-        hover:border-primary/50 minimal-card smooth-scale
+        hover:border-primary/50 p-4
       `}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -98,13 +98,11 @@ export default function Portfolio() {
           </p>
         </div>
 
-        {/* Company Grid - Vapi.ai Minimal Style */}
-        <div className="minimal-shadow rounded-lg overflow-hidden bg-background-card border border-border">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 -m-[0.5px]">
-            {portfolioData.companies.map((company, index) => (
-              <CompanyCard key={company.name} company={company} index={index} />
-            ))}
-          </div>
+        {/* Company Grid - Vapi.ai Style */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-px bg-border p-px rounded-lg overflow-hidden">
+          {portfolioData.companies.map((company, index) => (
+            <CompanyCard key={company.name} company={company} index={index} />
+          ))}
         </div>
 
         {/* Additional Info Section */}

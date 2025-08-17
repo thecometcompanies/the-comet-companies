@@ -10,11 +10,11 @@ export default function Hero() {
       <div className="container mx-auto max-w-6xl relative w-full">
         {/* Main Content */}
         <div className="text-center max-w-5xl mx-auto mb-24">
-          <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 text-foreground leading-tight tech-heading">
+          <h1 className="text-3xl leading-[3rem] tracking-[-0.8px] md:text-5xl md:leading-[4rem] md:tracking-[-0.07rem] lg:text-6xl lg:leading-[4.75rem] font-bold mb-8 text-foreground">
             {heroData.headline}
           </h1>
           
-          <p className="text-xl lg:text-2xl mb-16 max-w-4xl mx-auto text-foreground-muted leading-relaxed">
+          <p className="text-lg md:text-xl lg:text-2xl mb-16 max-w-4xl mx-auto text-foreground-muted leading-relaxed">
             {heroData.subheadline}
           </p>
 
