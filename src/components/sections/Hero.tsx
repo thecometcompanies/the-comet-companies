@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react'
 export default function Hero() {
   const heroData = {
     headline: "The Comet Companies",
-    subheadline: "A Holding Company of Tech Driven Businesses",
+    subheadline: "A Holding Company of Tech Driven Businesses 🚀",
     stats: [
       { value: "8+", label: "Projects completed" },
       { value: "185k+", label: "Happy clients" },
