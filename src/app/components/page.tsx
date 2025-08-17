@@ -143,10 +143,9 @@ export default function ComponentShowcase() {
               <CardHeader className="flex gap-4 pb-6">
                 <Avatar
                   alt="nextui logo"
-                  height={48}
+                  size="lg"
                   radius="sm"
                   src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-                  width={48}
                 />
                 <div className="flex flex-col">
                   <p className="text-lg font-semibold">NextUI</p>
