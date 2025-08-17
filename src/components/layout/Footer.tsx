@@ -12,15 +12,15 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-gray-900 border-t border-gray-800">
-      <div className="container max-w-6xl mx-auto px-6 py-16">
+    <footer className="bg-base-bg-main border-t border-base-800">
+      <div className="w-full max-w-6xl mx-auto px-6 py-16">
         <div className="flex flex-col md:flex-row justify-between items-center gap-12">
           {/* Brand */}
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-bold gradient-text mb-3">
+            <h3 className="text-2xl font-bold text-base-bg-alt mb-3">
               The Comet Companies
             </h3>
-            <p className="text-gray-400 text-base max-w-md leading-relaxed">
+            <p className="text-base-300 text-base max-w-md leading-relaxed">
               Building the future through technology and strategic investments.
             </p>
           </div>
@@ -31,7 +31,7 @@ export default function Footer() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-gray-400 hover:text-yellow-400 transition-colors font-medium uppercase tracking-wider"
+                className="text-base-300 hover:text-brand-primary transition-colors font-medium uppercase tracking-wider"
               >
                 {link.label}
               </a>
@@ -42,21 +42,21 @@ export default function Footer() {
           <div className="flex items-center gap-6">
             <a
               href="https://twitter.com/thecometcompanies"
-              className="p-3 text-gray-500 hover:text-yellow-400 transition-colors hover:bg-gray-800 rounded-lg"
+              className="p-3 text-base-400 hover:text-brand-primary transition-colors hover:bg-base-800 rounded-lg"
               aria-label="Twitter"
             >
               <Twitter className="w-5 h-5" />
             </a>
             <a
               href="https://linkedin.com/company/thecometcompanies"
-              className="p-3 text-gray-500 hover:text-yellow-400 transition-colors hover:bg-gray-800 rounded-lg"
+              className="p-3 text-base-400 hover:text-brand-primary transition-colors hover:bg-base-800 rounded-lg"
               aria-label="LinkedIn"
             >
               <Linkedin className="w-5 h-5" />
             </a>
             <a
               href="mailto:hello@thecometcompanies.com"
-              className="p-3 text-gray-500 hover:text-yellow-400 transition-colors hover:bg-gray-800 rounded-lg"
+              className="p-3 text-base-400 hover:text-brand-primary transition-colors hover:bg-base-800 rounded-lg"
               aria-label="Email"
             >
               <Mail className="w-5 h-5" />
@@ -65,8 +65,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-12 pt-8 border-t border-gray-800 text-center">
-          <p className="text-gray-500 text-sm">
+        <div className="mt-12 pt-8 border-t border-base-800 text-center">
+          <p className="text-base-400 text-sm">
             © 2024 The Comet Companies. All rights reserved. | Confidential and Proprietary
           </p>
         </div>

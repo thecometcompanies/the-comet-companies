@@ -23,7 +23,7 @@ function CompanyCard({ company }: { company: CompanyProps }) {
       href={company.link}
       target="_blank"
       rel="noopener noreferrer"
-      className="relative aspect-[4/3] border-r border-b border-gray-800 flex flex-col bg-gray-900 hover:bg-gray-800 cursor-pointer overflow-hidden transition-all duration-200 group"
+      className="relative aspect-[4/3] border-r border-b border-base-800 flex flex-col bg-base-900 hover:bg-base-800 cursor-pointer overflow-hidden transition-all duration-200 group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -46,7 +46,7 @@ function CompanyCard({ company }: { company: CompanyProps }) {
             </div>
           </div>
         ) : (
-          <span className={`text-base font-semibold text-center ${company.isHighlighted ? 'text-blue-400' : 'text-white'}`}>
+          <span className={`text-base font-semibold text-center ${company.isHighlighted ? 'text-brand-primary' : 'text-base-bg-alt'}`}>
             {company.logo || company.name}
           </span>
         )}
@@ -54,8 +54,8 @@ function CompanyCard({ company }: { company: CompanyProps }) {
       
       {/* Status Bar */}
       <div className={`
-        px-4 py-3 text-xs font-medium tracking-wide uppercase border-t border-gray-800
-        ${company.isHighlighted ? 'bg-blue-600 text-white' : 'bg-gray-950 text-gray-400'}
+        px-4 py-3 text-xs font-medium tracking-wide uppercase border-t border-base-800
+        ${company.isHighlighted ? 'bg-brand-primary text-base-950' : 'bg-base-950 text-base-400'}
       `}>
         {company.status}
         {company.statusDetail && (
@@ -80,30 +80,32 @@ export default function Portfolio() {
   const portfolioData = content.portfolio
 
   return (
-    <section id="portfolio" className="py-24 bg-[#0F0F0F]">
-      <div className="max-w-7xl mx-auto px-4">
+    <section id="portfolio" className="py-24 bg-base-bg-alt">
+      <div className="w-full px-6">
         {/* Header */}
-        <div className="text-center mb-20">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
+        <div className="text-center mb-20 max-w-5xl mx-auto">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-base-950">
             {portfolioData.title}
           </h2>
-          <p className="text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-base-700 leading-relaxed">
             {portfolioData.description}
           </p>
         </div>
 
         {/* Company Grid */}
-        <div className="bg-gray-900 rounded-lg overflow-hidden border border-gray-800">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-            {portfolioData.companies.map((company) => (
-              <CompanyCard key={company.name} company={company} />
-            ))}
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-base-900 rounded-lg overflow-hidden border border-base-800">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+              {portfolioData.companies.map((company) => (
+                <CompanyCard key={company.name} company={company} />
+              ))}
+            </div>
           </div>
         </div>
 
         {/* Additional Info Section */}
         <div className="mt-16 text-center">
-          <p className="text-gray-500 text-sm uppercase tracking-wider font-medium">
+          <p className="text-base-600 text-sm uppercase tracking-wider font-medium">
             * IPO denotes Initial Public Offering | DPO denotes Direct Public Offering
           </p>
         </div>
