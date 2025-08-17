@@ -45,7 +45,7 @@ export default function DemoPage() {
       <section className="container mx-auto px-4 py-12 border-t border-gray-700">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-white mb-4">🎯 Exact Vapi Shimmer Animation</h2>
-          <p className="text-gray-400">Extracted directly from Vapi's newsletter banner</p>
+          <p className="text-gray-400">Extracted directly from Vapi&apos;s newsletter banner</p>
         </div>
         
         {/* Newsletter Banner Recreation */}

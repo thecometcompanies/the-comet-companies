@@ -13,10 +13,10 @@ export default function HeroNew() {
       
       {/* Perfect Centering Container */}
       <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="max-w-5xl mx-auto text-center space-y-12">
+        <div className="max-w-6xl mx-auto text-center space-y-12">
           
           {/* Main Headline with Perfect Typography */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-foreground leading-tight">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-foreground leading-tight mx-auto">
             <span className="block">{heroData.headline.split(' ').slice(0, 3).join(' ')}</span>
             <span className="block text-primary">{heroData.headline.split(' ').slice(3).join(' ')}</span>
           </h1>
