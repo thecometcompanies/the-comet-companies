@@ -10,30 +10,143 @@
     ]
   },
   "portfolio": {
-    "title": "The Portfolio Companies",
-    "description": "We build and invest in companies that are shaping the future of technology and creating meaningful impact across industries.",
+    "title": "Portfolio Companies",
+    "description": "We invest in and build companies that are defining the future of technology and creating lasting impact across industries.",
     "companies": [
       {
-        "title": "DTLA Print",
-        "description": "Enterprise SaaS platform serving 10,000+ businesses with workflow automation and analytics.",
-        "category": "B2B SaaS",
+        "name": "DTLA Print",
+        "logo": "DTLA Print",
         "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center",
-        "metrics": [
-          { "label": "ARR", "value": "$12M" },
-          { "label": "Users", "value": "50K+" }
-        ],
-        "link": "https://techflow.example.com"
+        "status": "ACTIVE",
+        "statusDetail": "",
+        "link": "https://dtlaprint.com",
+        "isHighlighted": true
       },
       {
-        "title": "Merch Karma",
-        "description": "Digital health platform connecting patients with healthcare providers nationwide.",
-        "category": "Healthcare",
+        "name": "Merch Karma",
+        "logo": "Merch Karma",
         "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop&crop=center",
-        "metrics": [
-          { "label": "Patients", "value": "250K+" },
-          { "label": "Providers", "value": "5,000+" }
-        ],
-        "link": "https://healthconnect.example.com"
+        "status": "ACQUIRED BY",
+        "statusDetail": "PRINTFUL",
+        "link": "https://merchkarma.com",
+        "isHighlighted": false
+      },
+      {
+        "name": "DataFlow",
+        "logo": "DataFlow",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center",
+        "status": "ACQUIRED BY",
+        "statusDetail": "TABLEAU",
+        "link": "https://dataflow.example.com",
+        "isHighlighted": false
+      },
+      {
+        "name": "TechConsult",
+        "logo": "TechConsult",
+        "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop&crop=center",
+        "status": "IPO",
+        "statusDetail": "TCSL",
+        "link": "https://techconsult.example.com",
+        "isHighlighted": false
+      },
+      {
+        "name": "Airbnb",
+        "logo": "airbnb",
+        "image": "https://images.unsplash.com/photo-1559599238-308793637427?w=800&h=600&fit=crop&crop=center",
+        "status": "IPO",
+        "statusDetail": "ABNB",
+        "link": "https://airbnb.com",
+        "isHighlighted": false
+      },
+      {
+        "name": "Digital Hub",
+        "logo": "Digital Hub",
+        "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop&crop=center",
+        "status": "ACQUIRED BY",
+        "statusDetail": "ADOBE",
+        "link": "https://digitalhub.example.com",
+        "isHighlighted": false
+      },
+      {
+        "name": "CloudOps",
+        "logo": "CloudOps",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=600&fit=crop&crop=center",
+        "status": "ACQUIRED BY",
+        "statusDetail": "AWS",
+        "link": "https://cloudops.example.com",
+        "isHighlighted": false
+      },
+      {
+        "name": "MediaFlow",
+        "logo": "MediaFlow",
+        "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop&crop=center",
+        "status": "IPO",
+        "statusDetail": "MFLW",
+        "link": "https://mediaflow.example.com",
+        "isHighlighted": false
+      },
+      {
+        "name": "SecureAuth",
+        "logo": "SecureAuth",
+        "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop&crop=center",
+        "status": "ACQUIRED BY",
+        "statusDetail": "MICROSOFT",
+        "link": "https://secureauth.example.com",
+        "isHighlighted": false
+      },
+      {
+        "name": "FinanceKit",
+        "logo": "FinanceKit",
+        "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop&crop=center",
+        "status": "DPO",
+        "statusDetail": "FNKT",
+        "link": "https://financekit.example.com",
+        "isHighlighted": false
+      },
+      {
+        "name": "AutoML Pro",
+        "logo": "AutoML Pro",
+        "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=600&fit=crop&crop=center",
+        "status": "ACQUIRED BY",
+        "statusDetail": "GOOGLE",
+        "link": "https://automl.example.com",
+        "isHighlighted": false
+      },
+      {
+        "name": "VentureNet",
+        "logo": "VentureNet",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center",
+        "status": "ACQUIRED BY",
+        "statusDetail": "SALESFORCE",
+        "link": "https://venturenet.example.com",
+        "isHighlighted": false
+      },
+      {
+        "name": "BlockChain Co",
+        "logo": "BlockChain Co",
+        "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop&crop=center",
+        "status": "IPO",
+        "statusDetail": "BLKC",
+        "link": "https://blockchain.example.com",
+        "isHighlighted": false
+      },
+      {
+        "name": "HealthTech",
+        "logo": "HealthTech",
+        "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop&crop=center",
+        "status": "ACQUIRED BY",
+        "statusDetail": "JOHNSON & JOHNSON",
+        "link": "https://healthtech.example.com",
+        "isHighlighted": false
+      },
+      {
+        "name": "EduPlatform",
+        "logo": "EduPlatform",
+        "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&h=600&fit=crop&crop=center",
+        "status": "ACQUIRED BY",
+        "statusDetail": "PEARSON",
+        "link": "https://eduplatform.example.com",
+        "isHighlighted": false
       }
     ]
   },

@@ -1,19 +1,10 @@
-'use client'
-
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
+import { loadSiteContent } from '@/lib/content-server'
 
 export default function Hero() {
-  const heroData = {
-    headline: "The Comet Companies",
-    subheadline: "A Holding Company of Tech Driven Businesses 🚀",
-    stats: [
-      { value: "8+", label: "Projects completed" },
-      { value: "185k+", label: "Happy clients" },
-      { value: "15+", label: "Years experience" },
-      { value: "100%", label: "Tech focused" }
-    ]
-  }
+  const content = loadSiteContent()
+  const heroData = content.hero
   
   return (
     <section className="pt-32 pb-20 px-6 bg-white">
