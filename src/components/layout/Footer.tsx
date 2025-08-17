@@ -4,12 +4,6 @@ import { motion } from 'framer-motion'
 import { Twitter, Linkedin, Mail } from 'lucide-react'
 
 export default function Footer() {
-  const socialLinks = [
-    { icon: Twitter, href: 'https://twitter.com/thecometcompanies', label: 'Twitter' },
-    { icon: Linkedin, href: 'https://linkedin.com/company/thecometcompanies', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:hello@thecometcompanies.com', label: 'Email' },
-  ]
-
   const footerLinks = [
     { label: 'About', href: '#about' },
     { label: 'Portfolio', href: '#portfolio' },
@@ -53,16 +47,27 @@ export default function Footer() {
 
           {/* Social Links */}
           <div className="flex items-center gap-4">
-            {socialLinks.map((social) => (
-              <a
-                key={social.label}
-                href={social.href}
-                className="p-2 text-gray-400 hover:text-gray-600 transition-colors"
-                aria-label={social.label}
-              >
-                <social.icon className="w-4 h-4" />
-              </a>
-            ))}
+            <a
+              href="https://twitter.com/thecometcompanies"
+              className="p-2 text-gray-400 hover:text-gray-600 transition-colors"
+              aria-label="Twitter"
+            >
+              <Twitter className="w-4 h-4" />
+            </a>
+            <a
+              href="https://linkedin.com/company/thecometcompanies"
+              className="p-2 text-gray-400 hover:text-gray-600 transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="w-4 h-4" />
+            </a>
+            <a
+              href="mailto:hello@thecometcompanies.com"
+              className="p-2 text-gray-400 hover:text-gray-600 transition-colors"
+              aria-label="Email"
+            >
+              <Mail className="w-4 h-4" />
+            </a>
           </div>
         </motion.div>
 

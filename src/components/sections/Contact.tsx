@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, MessageCircle, Calendar } from 'lucide-react'
+import { Mail } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import { fetchSiteContent } from '@/lib/content-client'
 import type { SiteContent } from '@/lib/content-types'
