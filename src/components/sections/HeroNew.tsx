@@ -51,18 +51,20 @@ export default function HeroNew() {
       
       {/* Stats Grid with Perfect Centering */}
       <div className="absolute bottom-0 left-0 right-0 border-t border-border bg-background/80 backdrop-blur-sm">
-        <div className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            {heroData.stats.map((stat) => (
-              <div key={stat.label} className="text-center space-y-2">
-                <div className="text-3xl lg:text-4xl font-bold text-foreground">
-                  {stat.value}
+        <div className="container mx-auto px-4 py-16">
+          <div className="flex items-center justify-center">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 max-w-5xl">
+              {heroData.stats.map((stat) => (
+                <div key={stat.label} className="text-center space-y-3">
+                  <div className="text-3xl lg:text-5xl font-bold text-foreground">
+                    {stat.value}
+                  </div>
+                  <div className="text-sm text-muted-foreground uppercase tracking-wider font-medium">
+                    {stat.label}
+                  </div>
                 </div>
-                <div className="text-sm text-muted-foreground uppercase tracking-wider font-medium">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
