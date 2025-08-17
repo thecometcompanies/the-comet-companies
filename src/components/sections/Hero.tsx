@@ -30,7 +30,7 @@ export default function Hero() {
 
       {/* Stats Grid */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 pt-16 border-t border-base-800 max-w-6xl mx-auto px-6">
-        {heroData.stats.map((stat, index) => (
+        {heroData.stats.map((stat) => (
           <div key={stat.label} className="text-center">
             <div className="text-3xl lg:text-5xl font-bold text-base-bg-alt mb-2">
               {stat.value}

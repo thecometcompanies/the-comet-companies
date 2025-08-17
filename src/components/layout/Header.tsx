@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 export default function Header() {
   return (
@@ -8,9 +8,9 @@ export default function Header() {
       <div className="bg-base-bg-main/90 -z-10 pointer-events-none absolute inset-0 backdrop-blur-sm"></div>
       <div className="mx-auto max-w-[86rem] px-8">
         <nav className="flex h-16 items-center justify-between gap-5">
-          <a aria-label="The Comet Companies Logo" className="relative w-fit shrink-0" href="/">
+          <Link aria-label="The Comet Companies Logo" className="relative w-fit shrink-0" href="/">
             <span className="text-xl font-bold text-base-bg-alt">The Comet Companies</span>
-          </a>
+          </Link>
           
           <ul className="hidden items-center font-mono text-[.6875rem] leading-5 font-medium tracking-[.06rem] uppercase lg:gap-2 xl:gap-8 2xl:gap-10 lg:flex">
             <li className="text-base-300 hover:text-base-50 transition-colors duration-300 ease-in-out">

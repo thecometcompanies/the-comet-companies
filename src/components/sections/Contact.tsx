@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { Mail } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import { fetchSiteContent } from '@/lib/content-client'
@@ -35,7 +34,7 @@ export default function Contact() {
 
         {/* Contact Options */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {contactData.options.map((option, index) => (
+          {contactData.options.map((option) => (
             <a
               key={option.title}
               href={option.href}

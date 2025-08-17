@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { fetchSiteContent } from '@/lib/content-client'
@@ -16,7 +15,7 @@ interface CompanyProps {
   isHighlighted?: boolean
 }
 
-function CompanyCard({ company, index }: { company: CompanyProps; index: number }) {
+function CompanyCard({ company }: { company: CompanyProps }) {
   const [isHovered, setIsHovered] = useState(false)
   
   return (
@@ -96,8 +95,8 @@ export default function Portfolio() {
         {/* Company Grid */}
         <div className="bg-gray-900 rounded-lg overflow-hidden border border-gray-800">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-            {portfolioData.companies.map((company, index) => (
-              <CompanyCard key={company.name} company={company} index={index} />
+            {portfolioData.companies.map((company) => (
+              <CompanyCard key={company.name} company={company} />
             ))}
           </div>
         </div>
