@@ -10,7 +10,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://portfoliosites.com'),
   title: {
-    default: 'The Comet Companies - Premium Web Development & Design Agency',
+    default: 'The Comet Companies - Strategic Investment & Technology Holding Company',
     template: '%s | The Comet Companies'
   },
   description: 'We create exceptional digital experiences for forward-thinking companies. From sleek portfolios to powerful web applications, we bring your vision to life with cutting-edge technology.',
