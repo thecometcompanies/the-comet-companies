@@ -98,7 +98,7 @@ export default function ContactRevamped() {
                   Send us a message
                 </h3>
                 <p className="text-muted-foreground text-lg">
-                  Let's discuss your next big idea
+                  Let&apos;s discuss your next big idea
                 </p>
               </div>
             </CardHeader>
