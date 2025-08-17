@@ -7,10 +7,10 @@ interface SectionProps extends React.HTMLAttributes<HTMLElement> {
 }
 
 const sectionSizes = {
-  sm: "py-16",
-  md: "py-24", 
-  lg: "py-32",
-  xl: "py-40"
+  sm: "py-24",
+  md: "py-32", 
+  lg: "py-48",
+  xl: "py-56"
 }
 
 function Section({ 

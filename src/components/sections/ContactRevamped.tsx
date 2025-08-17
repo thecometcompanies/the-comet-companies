@@ -2,10 +2,7 @@
 
 import { Mail, Building2, Users } from 'lucide-react'
 import { useState, useEffect } from 'react'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
+import { Button, Card, CardBody, CardHeader, Input, Textarea, Divider } from '@heroui/react'
 import { Section, SectionHeader, SectionTitle, SectionDescription } from '@/components/ui/section'
 import { fetchSiteContent } from '@/lib/content-client'
 import type { SiteContent } from '@/lib/content-types'
@@ -63,9 +60,10 @@ export default function ContactRevamped() {
                 <Card 
                   key={option.title}
                   className="group transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl border-border/50 hover:border-primary/50 bg-card/50 backdrop-blur-sm"
+                  isPressable
                 >
                   <a href={option.href} className="block">
-                    <CardContent className="p-8 lg:p-12">
+                    <CardBody className="p-8 lg:p-12">
                       <div className="flex items-start gap-6 lg:gap-8">
                         {/* Icon */}
                         <div className="w-14 h-14 lg:w-16 lg:h-16 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 group-hover:scale-110 flex-shrink-0">
@@ -85,88 +83,111 @@ export default function ContactRevamped() {
                           </div>
                         </div>
                       </div>
-                    </CardContent>
+                    </CardBody>
                   </a>
                 </Card>
               )
             })}
           </div>
           
-          {/* Contact Form */}
-          <Card className="border-border/50 bg-card/50 backdrop-blur-sm shadow-2xl sticky top-8">
-            <CardHeader className="pb-6 lg:pb-8">
-              <CardTitle className="text-2xl lg:text-3xl text-center text-foreground font-bold">
-                Send us a message
-              </CardTitle>
+          {/* Enhanced Contact Form with HeroUI */}
+          <Card className="shadow-2xl bg-gradient-to-br from-background to-background/80 border-border/30">
+            <CardHeader className="pb-8">
+              <div className="text-center space-y-4">
+                <h3 className="text-3xl lg:text-4xl font-bold text-foreground">
+                  Send us a message
+                </h3>
+                <p className="text-muted-foreground text-lg">
+                  Let's discuss your next big idea
+                </p>
+              </div>
             </CardHeader>
-            <CardContent className="space-y-8 lg:space-y-10">
-              <form className="space-y-8 lg:space-y-10">
+            
+            <Divider className="opacity-20" />
+            
+            <CardBody className="space-y-8 p-8 lg:p-12">
+              <form className="space-y-8">
                 {/* Name Fields */}
-                <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
-                  <div className="space-y-3 lg:space-y-4">
-                    <label className="text-base font-medium text-foreground">
-                      First Name
-                    </label>
-                    <Input 
-                      placeholder="John"
-                      className="bg-background border-border focus:border-primary focus:ring-primary h-12 lg:h-14"
-                    />
-                  </div>
-                  <div className="space-y-3 lg:space-y-4">
-                    <label className="text-base font-medium text-foreground">
-                      Last Name
-                    </label>
-                    <Input 
-                      placeholder="Doe"
-                      className="bg-background border-border focus:border-primary focus:ring-primary h-12 lg:h-14"
-                    />
-                  </div>
+                <div className="grid sm:grid-cols-2 gap-6">
+                  <Input
+                    type="text"
+                    label="First Name"
+                    placeholder="John"
+                    variant="bordered"
+                    size="lg"
+                    className="text-base"
+                    classNames={{
+                      input: "text-foreground placeholder:text-muted-foreground",
+                      inputWrapper: "border-border data-[hover=true]:border-primary/50 group-data-[focus=true]:border-primary"
+                    }}
+                  />
+                  <Input
+                    type="text"
+                    label="Last Name"
+                    placeholder="Doe"
+                    variant="bordered"
+                    size="lg"
+                    className="text-base"
+                    classNames={{
+                      input: "text-foreground placeholder:text-muted-foreground",
+                      inputWrapper: "border-border data-[hover=true]:border-primary/50 group-data-[focus=true]:border-primary"
+                    }}
+                  />
                 </div>
                 
                 {/* Email */}
-                <div className="space-y-3 lg:space-y-4">
-                  <label className="text-base font-medium text-foreground">
-                    Email
-                  </label>
-                  <Input 
-                    type="email"
-                    placeholder="john@company.com"
-                    className="bg-background border-border focus:border-primary focus:ring-primary h-12 lg:h-14"
-                  />
-                </div>
+                <Input
+                  type="email"
+                  label="Email Address"
+                  placeholder="john@company.com"
+                  variant="bordered"
+                  size="lg"
+                  className="text-base"
+                  classNames={{
+                    input: "text-foreground placeholder:text-muted-foreground",
+                    inputWrapper: "border-border data-[hover=true]:border-primary/50 group-data-[focus=true]:border-primary"
+                  }}
+                />
                 
                 {/* Company */}
-                <div className="space-y-3 lg:space-y-4">
-                  <label className="text-base font-medium text-foreground">
-                    Company
-                  </label>
-                  <Input 
-                    placeholder="Your Company"
-                    className="bg-background border-border focus:border-primary focus:ring-primary h-12 lg:h-14"
-                  />
-                </div>
+                <Input
+                  type="text"
+                  label="Company"
+                  placeholder="Your Company"
+                  variant="bordered"
+                  size="lg"
+                  className="text-base"
+                  classNames={{
+                    input: "text-foreground placeholder:text-muted-foreground",
+                    inputWrapper: "border-border data-[hover=true]:border-primary/50 group-data-[focus=true]:border-primary"
+                  }}
+                />
                 
                 {/* Message */}
-                <div className="space-y-3 lg:space-y-4">
-                  <label className="text-base font-medium text-foreground">
-                    Message
-                  </label>
-                  <Textarea 
-                    placeholder="Tell us about your project or inquiry..."
-                    className="bg-background border-border focus:border-primary focus:ring-primary min-h-[120px] lg:min-h-[150px] resize-none p-4 lg:p-6"
-                  />
-                </div>
+                <Textarea
+                  label="Message"
+                  placeholder="Tell us about your project or inquiry..."
+                  variant="bordered"
+                  minRows={6}
+                  className="text-base"
+                  classNames={{
+                    input: "text-foreground placeholder:text-muted-foreground resize-none",
+                    inputWrapper: "border-border data-[hover=true]:border-primary/50 group-data-[focus=true]:border-primary"
+                  }}
+                />
                 
                 {/* Submit Button */}
                 <Button 
                   type="submit"
-                  className="w-full py-4 lg:py-6 text-base lg:text-lg font-semibold rounded-xl bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300"
+                  color="primary"
                   size="lg"
+                  className="w-full py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                  radius="lg"
                 >
                   Send Message
                 </Button>
               </form>
-            </CardContent>
+            </CardBody>
           </Card>
           
         </div>
