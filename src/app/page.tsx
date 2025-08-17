@@ -1,17 +1,17 @@
 import Header from '@/components/layout/Header'
 import HeroNew from '@/components/sections/HeroNew'
-import PortfolioNew from '@/components/sections/PortfolioNew'
-import ContactNew from '@/components/sections/ContactNew'
+import PortfolioRevamped from '@/components/sections/PortfolioRevamped'
+import ContactRevamped from '@/components/sections/ContactRevamped'
 import Footer from '@/components/layout/Footer'
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      <main className="bg-background">
         <HeroNew />
-        <PortfolioNew />
-        <ContactNew />
+        <PortfolioRevamped />
+        <ContactRevamped />
       </main>
       <Footer />
     </>
