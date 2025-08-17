@@ -10,35 +10,38 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Blackstone Dark Theme Colors
+        // Vapi.ai Inspired Minimal Theme Colors
         background: {
-          DEFAULT: '#0A0A0A',
-          alt: '#111111',
-          card: '#1A1A1A',
+          DEFAULT: '#09090B',
+          card: '#0F0F0F',
+          muted: '#18181B',
         },
         foreground: {
-          DEFAULT: '#FFFFFF',
-          muted: '#A3A3A3',
-          subtle: '#737373',
+          DEFAULT: '#FAFAFA',
+          muted: '#A1A1AA',
+          subtle: '#71717A',
         },
         primary: {
-          DEFAULT: '#FFFFFF',
-          hover: '#F5F5F5',
+          DEFAULT: '#3B82F6',
+          hover: '#2563EB',
+          foreground: '#FFFFFF',
         },
         secondary: {
-          DEFAULT: '#1A1A1A',
+          DEFAULT: '#27272A',
+          foreground: '#FAFAFA',
         },
         accent: {
-          DEFAULT: '#D4AF37',
-          muted: '#B8941F',
+          DEFAULT: '#8B5CF6',
+          hover: '#7C3AED',
+          foreground: '#FFFFFF',
         },
         border: {
-          DEFAULT: '#2A2A2A',
-          light: '#1F1F1F',
+          DEFAULT: '#27272A',
+          muted: '#18181B',
         },
-        surface: {
-          DEFAULT: '#0F0F0F',
-          hover: '#1A1A1A',
+        muted: {
+          DEFAULT: '#18181B',
+          foreground: '#A1A1AA',
         },
       },
       fontFamily: {

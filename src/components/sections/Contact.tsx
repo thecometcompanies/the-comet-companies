@@ -21,14 +21,14 @@ export default function Contact() {
 
 
   return (
-    <section id="contact" className="py-24 bg-black">
+    <section id="contact" className="py-24 bg-background">
       <div className="container mx-auto max-w-5xl">
         {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold mb-6 text-white">
+          <h2 className="text-5xl font-bold mb-6 text-foreground tech-heading">
             {contactData.title}
           </h2>
-          <p className="text-xl max-w-3xl mx-auto text-gray-300 leading-relaxed">
+          <p className="text-xl max-w-3xl mx-auto text-foreground-muted leading-relaxed">
             {contactData.description}
           </p>
         </div>
@@ -39,14 +39,14 @@ export default function Contact() {
             <a
               key={option.title}
               href={option.href}
-              className="blackstone-card group p-10 rounded-xl hover-lift transition-all duration-500 text-center"
+              className="minimal-card group p-10 rounded-lg smooth-scale transition-all duration-200 text-center"
             >
-              <div className="w-20 h-20 bg-gray-800 rounded-xl flex items-center justify-center mx-auto mb-8 group-hover:bg-yellow-600 group-hover:text-black transition-all duration-300 border border-gray-700">
-                <Mail className="w-10 h-10 text-gray-400 group-hover:text-black" />
+              <div className="w-20 h-20 bg-background-muted rounded-lg flex items-center justify-center mx-auto mb-8 group-hover:bg-primary group-hover:text-foreground transition-all duration-200 border border-border">
+                <Mail className="w-10 h-10 text-foreground-muted group-hover:text-foreground" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-yellow-400 transition-colors">{option.title}</h3>
-              <p className="text-gray-400 mb-8 leading-relaxed">{option.description}</p>
-              <div className="text-yellow-400 font-semibold text-lg tracking-wide">
+              <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">{option.title}</h3>
+              <p className="text-foreground-muted mb-8 leading-relaxed">{option.description}</p>
+              <div className="text-primary font-semibold text-lg tracking-wide">
                 {option.action}
               </div>
             </a>
