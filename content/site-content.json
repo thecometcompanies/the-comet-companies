@@ -1,0 +1,67 @@
+{
+  "hero": {
+    "headline": "The Comet Companies",
+    "subheadline": "A Holding Company of Tech Driven Busineses",
+    "stats": [
+      { "value": "8+", "label": "Projects completed" },
+      { "value": "185k+", "label": "Happy clients" },
+      { "value": "15+", "label": "Years experience" },
+      { "value": "100%", "label": "Tech focused" }
+    ]
+  },
+  "portfolio": {
+    "title": "The Portfolio Companies",
+    "description": "We build and invest in companies that are shaping the future of technology and creating meaningful impact across industries.",
+    "companies": [
+      {
+        "title": "DTLA Print",
+        "description": "Enterprise SaaS platform serving 10,000+ businesses with workflow automation and analytics.",
+        "category": "B2B SaaS",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center",
+        "metrics": [
+          { "label": "ARR", "value": "$12M" },
+          { "label": "Users", "value": "50K+" }
+        ],
+        "link": "https://techflow.example.com"
+      },
+      {
+        "title": "Merch Karma",
+        "description": "Digital health platform connecting patients with healthcare providers nationwide.",
+        "category": "Healthcare",
+        "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop&crop=center",
+        "metrics": [
+          { "label": "Patients", "value": "250K+" },
+          { "label": "Providers", "value": "5,000+" }
+        ],
+        "link": "https://healthconnect.example.com"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "description": "Interested in partnering with us or learning more about our portfolio companies? We'd love to hear from you.",
+    "options": [
+      {
+        "title": "General Inquiries",
+        "description": "Get in touch via email",
+        "action": "hello@thecometcompanies.com",
+        "href": "mailto:hello@thecometcompanies.com"
+      },
+      {
+        "title": "Partnership Opportunities",
+        "description": "Discuss investment and partnerships",
+        "action": "partnerships@thecometcompanies.com",
+        "href": "mailto:partnerships@thecometcompanies.com"
+      }
+    ]
+  },
+  "company": {
+    "name": "The Comet Companies",
+    "tagline": "Building the future through technology and strategic investments.",
+    "email": "hello@thecometcompanies.com",
+    "social": {
+      "twitter": "https://twitter.com/thecometcompanies",
+      "linkedin": "https://linkedin.com/company/thecometcompanies"
+    }
+  }
+}

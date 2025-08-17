@@ -1,0 +1,18 @@
+# The Comet Companies - Robots.txt
+User-agent: *
+Allow: /
+
+# Disallow admin areas
+Disallow: /api/
+
+# Google Bot specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Google Image Bot
+User-agent: Googlebot-Image
+Allow: /
+
+# Sitemaps
+Sitemap: https://thecometcompanies.com/sitemap.xml
