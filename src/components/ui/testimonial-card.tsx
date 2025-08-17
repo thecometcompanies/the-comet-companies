@@ -52,16 +52,19 @@ export function TestimonialCard({
       {variant !== 'minimal' && renderStars(rating)}
       
       <blockquote className="text-lg leading-relaxed mb-6 italic">
-        "{quote}"
+        &ldquo;{quote}&rdquo;
       </blockquote>
 
       <div className="flex items-center gap-4">
         {author.avatar ? (
-          <img
-            src={author.avatar}
-            alt={author.name}
-            className="h-12 w-12 rounded-full object-cover"
-          />
+          <div className="h-12 w-12 rounded-full overflow-hidden">
+            <div 
+              className="h-full w-full bg-cover bg-center"
+              style={{ backgroundImage: `url(${author.avatar})` }}
+              role="img"
+              aria-label={author.name}
+            />
+          </div>
         ) : (
           <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
             <span className="text-primary font-semibold text-lg">

@@ -3,7 +3,7 @@
 import { Button, Card, CardBody, CardHeader, CardFooter, Chip, Avatar, Progress, Badge, Divider, Link, Spacer } from "@heroui/react"
 import { StatsGrid } from "@/components/ui/stats-grid"
 import { TestimonialCard, TestimonialsGrid } from "@/components/ui/testimonial-card"
-import { PricingCard, PricingGrid } from "@/components/ui/pricing-card"
+import { PricingGrid } from "@/components/ui/pricing-card"
 import { FeatureGrid, ServiceFeature } from "@/components/ui/feature-grid"
 
 export default function ComponentShowcase() {
