@@ -1,0 +1,1 @@
+../../.claude-agents/project-level/whimsy-injector.md

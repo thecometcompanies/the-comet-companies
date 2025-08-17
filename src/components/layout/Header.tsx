@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header className="border-base-800 z-50 sticky top-0 border-b">
       <div className="bg-base-bg-main/90 -z-10 pointer-events-none absolute inset-0 backdrop-blur-sm"></div>
-      <div className="mx-auto max-w-[86rem] px-8">
+      <div className="w-full px-8">
         <nav className="flex h-16 items-center justify-between gap-5">
           <Link aria-label="The Comet Companies Logo" className="relative w-fit shrink-0" href="/">
             <span className="text-xl font-bold text-base-bg-alt">The Comet Companies</span>
