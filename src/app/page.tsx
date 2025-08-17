@@ -1,7 +1,7 @@
 import Header from '@/components/layout/Header'
-import Hero from '@/components/sections/Hero'
-import Portfolio from '@/components/sections/Portfolio'
-import Contact from '@/components/sections/Contact'
+import HeroNew from '@/components/sections/HeroNew'
+import PortfolioNew from '@/components/sections/PortfolioNew'
+import ContactNew from '@/components/sections/ContactNew'
 import Footer from '@/components/layout/Footer'
 
 export default function Home() {
@@ -9,9 +9,9 @@ export default function Home() {
     <>
       <Header />
       <main>
-        <Hero />
-        <Portfolio />
-        <Contact />
+        <HeroNew />
+        <PortfolioNew />
+        <ContactNew />
       </main>
       <Footer />
     </>
