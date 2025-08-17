@@ -19,39 +19,37 @@ export default function HeroNew() {
       {/* Perfect Centering Container */}
       <div className="w-full px-8 py-20 relative z-10">
         <div className="text-center space-y-16 lg:space-y-20">
+          {/* Main Headline with Perfect Typography */}
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-foreground leading-tight mx-auto">
+            <span className="block">{heroData.headline.split(' ').slice(0, 3).join(' ')}</span>
+            <span className="block text-primary">{heroData.headline.split(' ').slice(3).join(' ')}</span>
+          </h1>
+          
+          {/* CTA Buttons with Perfect Spacing */}
+          <div className="flex flex-col sm:flex-row gap-6 lg:gap-8 justify-center items-center pt-12 lg:pt-16">
+            <Button 
+              size="lg" 
+              className="px-8 py-4 text-base font-medium rounded-full group min-w-[200px]"
+              asChild
+            >
+              <a href="#portfolio">
+                View Our Portfolio
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </a>
+            </Button>
             
-            {/* Main Headline with Perfect Typography */}
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-foreground leading-tight mx-auto">
-              <span className="block">{heroData.headline.split(' ').slice(0, 3).join(' ')}</span>
-              <span className="block text-primary">{heroData.headline.split(' ').slice(3).join(' ')}</span>
-            </h1>
-            
-            {/* CTA Buttons with Perfect Spacing */}
-            <div className="flex flex-col sm:flex-row gap-6 lg:gap-8 justify-center items-center pt-12 lg:pt-16">
-              <Button 
-                size="lg" 
-                className="px-8 py-4 text-base font-medium rounded-full group min-w-[200px]"
-                asChild
-              >
-                <a href="#portfolio">
-                  View Our Portfolio
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </a>
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="px-8 py-4 text-base font-medium rounded-full min-w-[200px]"
-                asChild
-              >
-                <a href="#contact">
-                  Investor Relations
-                </a>
-              </Button>
-            </div>
-            
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="px-8 py-4 text-base font-medium rounded-full min-w-[200px]"
+              asChild
+            >
+              <a href="#contact">
+                Investor Relations
+              </a>
+            </Button>
           </div>
+        </div>
       </div>
       
       {/* Stats Grid with Perfect Centering */}
@@ -59,17 +57,16 @@ export default function HeroNew() {
         <div className="w-full px-8 py-16 lg:py-20">
           <div className="flex items-center justify-center">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-20">
-                {heroData.stats.map((stat) => (
-                  <div key={stat.label} className="text-center space-y-3 lg:space-y-4">
-                    <div className="text-2xl md:text-3xl lg:text-5xl font-bold text-foreground">
-                      {stat.value}
-                    </div>
-                    <div className="text-xs lg:text-sm text-muted-foreground uppercase tracking-wider font-medium">
-                      {stat.label}
-                    </div>
+              {heroData.stats.map((stat) => (
+                <div key={stat.label} className="text-center space-y-3 lg:space-y-4">
+                  <div className="text-2xl md:text-3xl lg:text-5xl font-bold text-foreground">
+                    {stat.value}
                   </div>
-                ))}
-              </div>
+                  <div className="text-xs lg:text-sm text-muted-foreground uppercase tracking-wider font-medium">
+                    {stat.label}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
