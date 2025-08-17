@@ -102,7 +102,7 @@ export default function PortfolioNew() {
       <div className="container mx-auto px-4">
         
         {/* Section Header - Perfectly Centered */}
-        <div className="flex flex-col items-center justify-center text-center mb-20 space-y-6">
+        <div className="flex flex-col items-center justify-center text-center mb-24 space-y-8">
           <h2 className="text-4xl md:text-6xl font-bold text-foreground max-w-4xl">
             Our <span className="text-primary">Portfolio</span>
           </h2>
@@ -113,7 +113,7 @@ export default function PortfolioNew() {
 
         {/* Portfolio Grid - Auto-Centering with Perfect Spacing */}
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {portfolioData.companies.map((company) => (
               <CompanyCard key={company.name} company={company} />
             ))}
@@ -121,7 +121,7 @@ export default function PortfolioNew() {
         </div>
 
         {/* Additional Info - Centered */}
-        <div className="mt-16 text-center">
+        <div className="mt-20 text-center">
           <p className="text-muted-foreground text-sm uppercase tracking-wider font-medium max-w-2xl mx-auto">
             * IPO denotes Initial Public Offering | DPO denotes Direct Public Offering
           </p>

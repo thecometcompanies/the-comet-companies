@@ -13,7 +13,7 @@ export default function HeroNew() {
       
       {/* Perfect Centering Container */}
       <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="max-w-6xl mx-auto text-center space-y-12">
+        <div className="max-w-6xl mx-auto text-center space-y-16">
           
           {/* Main Headline with Perfect Typography */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-foreground leading-tight mx-auto">
@@ -22,7 +22,7 @@ export default function HeroNew() {
           </h1>
           
           {/* CTA Buttons with Perfect Spacing */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-12">
             <Button 
               size="lg" 
               className="px-8 py-4 text-base font-medium rounded-full group min-w-[200px]"
@@ -53,7 +53,7 @@ export default function HeroNew() {
       <div className="absolute bottom-0 left-0 right-0 border-t border-border bg-background/80 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-16">
           <div className="flex items-center justify-center">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 max-w-5xl">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-16 max-w-6xl">
               {heroData.stats.map((stat) => (
                 <div key={stat.label} className="text-center space-y-3">
                   <div className="text-3xl lg:text-5xl font-bold text-foreground">
