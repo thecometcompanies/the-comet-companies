@@ -10,7 +10,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Vapi.ai Inspired Minimal Theme Colors
+        // Exact Vapi.ai Color System
+        'base-bg-main': '#09090B',
+        'base-bg-alt': '#FAFAFA', 
+        'base-50': '#FAFAFA',
+        'base-25': '#E5E5E5',
+        'base-300': '#A1A1AA',
+        'base-400': '#71717A',
+        'base-500': '#52525B',
+        'base-700': '#3F3F46',
+        'base-800': '#27272A',
+        'base-900': '#18181B',
+        'base-950': '#09090B',
+        'brand-primary': '#10B981',
+        'brand-primary-hovered': '#059669',
+        // Legacy colors for compatibility
         background: {
           DEFAULT: '#09090B',
           card: '#0F0F0F',
@@ -21,27 +35,9 @@ const config: Config = {
           muted: '#A1A1AA',
           subtle: '#71717A',
         },
-        primary: {
-          DEFAULT: '#3B82F6',
-          hover: '#2563EB',
-          foreground: '#FFFFFF',
-        },
-        secondary: {
-          DEFAULT: '#27272A',
-          foreground: '#FAFAFA',
-        },
-        accent: {
-          DEFAULT: '#8B5CF6',
-          hover: '#7C3AED',
-          foreground: '#FFFFFF',
-        },
         border: {
           DEFAULT: '#27272A',
           muted: '#18181B',
-        },
-        muted: {
-          DEFAULT: '#18181B',
-          foreground: '#A1A1AA',
         },
       },
       fontFamily: {

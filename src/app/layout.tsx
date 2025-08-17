@@ -108,7 +108,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${inter.variable} antialiased bg-background text-foreground dark`}>
+      <body className={`${inter.variable} antialiased bg-base-bg-main text-base-bg-alt`}>
         {children}
       </body>
     </html>

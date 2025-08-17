@@ -24,35 +24,30 @@ function CompanyCard({ company, index }: { company: CompanyProps; index: number 
       href={company.link}
       target="_blank"
       rel="noopener noreferrer"
-      className={`
-        relative aspect-[4/3] border border-border flex flex-col
-        ${company.isHighlighted ? 'bg-gradient-to-br from-primary/20 to-accent/20' : 'bg-background-card'}
-        hover:z-10 cursor-pointer overflow-hidden transition-all duration-200
-        hover:border-primary/50 p-4
-      `}
+      className="relative aspect-[4/3] border-r border-b border-gray-800 flex flex-col bg-gray-900 hover:bg-gray-800 cursor-pointer overflow-hidden transition-all duration-200 group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Company Logo/Name */}
-      <div className="flex-1 flex items-center justify-center p-4">
+      <div className="flex-1 flex items-center justify-center p-6">
         {isHovered ? (
           <div className="absolute inset-0">
             <Image
               src={company.image}
               alt={company.name}
               fill
-              className="object-cover"
+              className="object-cover opacity-50"
               sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 20vw"
             />
-            <div className="absolute inset-0 bg-background/60" />
+            <div className="absolute inset-0 bg-black/60" />
             <div className="absolute inset-0 flex items-center justify-center">
-              <span className="text-2xl font-bold text-foreground">
+              <span className="text-xl font-bold text-white">
                 {company.logo || company.name}
               </span>
             </div>
           </div>
         ) : (
-          <span className={`text-lg font-semibold ${company.isHighlighted ? 'text-primary' : 'text-foreground'}`}>
+          <span className={`text-base font-semibold text-center ${company.isHighlighted ? 'text-blue-400' : 'text-white'}`}>
             {company.logo || company.name}
           </span>
         )}
@@ -60,8 +55,8 @@ function CompanyCard({ company, index }: { company: CompanyProps; index: number 
       
       {/* Status Bar */}
       <div className={`
-        px-3 py-2 text-xs font-medium tracking-wide uppercase
-        ${company.isHighlighted ? 'bg-primary text-foreground' : 'bg-background text-foreground-muted'}
+        px-4 py-3 text-xs font-medium tracking-wide uppercase border-t border-gray-800
+        ${company.isHighlighted ? 'bg-blue-600 text-white' : 'bg-gray-950 text-gray-400'}
       `}>
         {company.status}
         {company.statusDetail && (
@@ -86,28 +81,30 @@ export default function Portfolio() {
   const portfolioData = content.portfolio
 
   return (
-    <section id="portfolio" className="py-24 bg-background-muted">
-      <div className="container mx-auto max-w-7xl px-6">
+    <section id="portfolio" className="py-24 bg-[#0F0F0F]">
+      <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-foreground tech-heading">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
             {portfolioData.title}
           </h2>
-          <p className="text-lg lg:text-xl max-w-4xl mx-auto text-foreground-muted leading-relaxed">
+          <p className="text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
             {portfolioData.description}
           </p>
         </div>
 
-        {/* Company Grid - Vapi.ai Style */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-px bg-border p-px rounded-lg overflow-hidden">
-          {portfolioData.companies.map((company, index) => (
-            <CompanyCard key={company.name} company={company} index={index} />
-          ))}
+        {/* Company Grid */}
+        <div className="bg-gray-900 rounded-lg overflow-hidden border border-gray-800">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            {portfolioData.companies.map((company, index) => (
+              <CompanyCard key={company.name} company={company} index={index} />
+            ))}
+          </div>
         </div>
 
         {/* Additional Info Section */}
-        <div className="mt-20 text-center">
-          <p className="text-foreground-subtle text-sm uppercase tracking-wider font-medium">
+        <div className="mt-16 text-center">
+          <p className="text-gray-500 text-sm uppercase tracking-wider font-medium">
             * IPO denotes Initial Public Offering | DPO denotes Direct Public Offering
           </p>
         </div>
